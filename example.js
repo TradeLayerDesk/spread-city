@@ -1,6 +1,6 @@
 require('dotenv').config;
 
-const SpreadCityAPI = require("..");
+const SpreadCityAPI = require(".");
 
 const scAPI = new SpreadCityAPI(process.env.EXAMPLE_API_KEY, process.env.EXAMPLE_API_SECRET);
 

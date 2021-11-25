@@ -18,6 +18,11 @@ module.exports = class SpreadCityAPI {
 
     // initialize api with my key and secret (downloaded from website)
     constructor(key, secret) {
+ 
+        if (!(key && secret)) {
+            throw new Error("SpreadCityAPI must be initialized with an Executor API key and secret, these can be generated from https://mrspreader.com/config");
+        }
+
         this.#key = key;
         this.#secret = secret;
     }
@@ -197,92 +202,5 @@ module.exports = class SpreadCityAPI {
         return response.data;
 
     }
-    
-    // keypairs
-    /*
-    async newKeyPair() {
-        const path = '/executor/set-fav'
-
-        if (!(id && name)) {
-            console.log("Missing required parameters");
-            return null;
-        }
-
-        try {
-
-            const data = {
-                id: id,
-                fav: name
-            }
-
-            const headers = await this.#setHeaders(path, methods.POST, data);
-
-            const response = await api.get(path, data, {headers: headers});
-
-            return response.data;
-
-        }
-        catch (err) {
-            console.log(err);
-            return null;
-        }
-    }
-
-    async listKeyPairs() {
-        const path = '/executor/set-fav'
-
-        if (!(id && name)) {
-            console.log("Missing required parameters");
-            return null;
-        }
-
-        try {
-
-            const data = {
-                id: id,
-                fav: name
-            }
-
-            const headers = await this.#setHeaders(path, methods.POST, data);
-
-            const response = await api.get(path, data, {headers: headers});
-
-            return response.data;
-
-        }
-        catch (err) {
-            console.log(err);
-            return null;
-        }
-    }
-
-    async deleteKeyPair(id) {
-        const path = '/executor/set-fav'
-
-        if (!(id && name)) {
-            console.log("Missing required parameters");
-            return null;
-        }
-
-        try {
-
-            const data = {
-                id: id,
-                fav: name
-            }
-
-            const headers = await this.#setHeaders(path, methods.POST, data);
-
-            const response = await api.get(path, data, {headers: headers});
-
-            return response.data;
-
-        }
-        catch (err) {
-            console.log(err);
-            return null;
-        }
-    }
-    */
 
 }

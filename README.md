@@ -5,7 +5,7 @@ the `spread-city` npm package is a nodejs wrapper for the spread city API
 ## Installation
 
 Install to your project with:
-`npm install --save git+https://github.com/TradeLayerDesk/spread-city.git`
+`npm install --save spread-city`
 
 
 ## Examples

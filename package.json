@@ -11,14 +11,13 @@
   "author": "Dirk Page",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.24.0",
-    "dotenv": "^10.0.0",
-    "ws": "^8.2.3"
+    "axios": "^0.24.0"
   },
   "devDependencies": {
     "assert": "^2.0.0",
     "chai": "^4.3.4",
     "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
     "mocha": "^9.1.3"
   }
 }
