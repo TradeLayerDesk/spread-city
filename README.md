@@ -38,7 +38,7 @@ console.log(executor);
 
 ```
 
-see [`./examples/example.js`](examples/example.js) for full example code
+see [`./examples/example.js`](./examples/example.js) for full example code
 
 
 ## Methods Documentation
