@@ -8,6 +8,10 @@
     "example": "node examples/example.js",
     "test": "cross-env NODE_ENV=test mocha -r dotenv/config"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TradeLayerDesk/spread-city.git"
+  },
   "author": "Dirk Page <dirkpage@hotmail.com> (http://github.com/paged1/)",
   "license": "ISC",
   "dependencies": {
